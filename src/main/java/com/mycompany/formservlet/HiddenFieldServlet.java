@@ -46,7 +46,7 @@ public class HiddenFieldServlet extends HttpServlet {
             out.print("Welcome " + n);
 
             // save cookie
-            out.print("<form action='HiddenFieldServlet2'>");
+            out.print("<form action='HiddenFieldServlet2' method=\"post\">");
             out.print("<input type='hidden' name='name' value='" + n + "'>");
             out.print("<input type='submit' value='go'>");
             out.print("</form>");
